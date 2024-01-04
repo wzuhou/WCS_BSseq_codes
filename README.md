@@ -8,7 +8,7 @@ Date:2023.Jan
 ## Pipeline
 
 ```mermaid
-%%{init: {'theme':'dark'}}%%
+%%{init: {'theme':'default'}}%%
 stateDiagram-v2
     fastqc --> Trimgalore : Trimming
     Trimgalore --> Bismark
