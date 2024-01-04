@@ -1,12 +1,14 @@
 # WCS_BSseq_codes
 This repository is for analyzing Whole Genome Bisulfite Sequencing in White-crowed sparrow
+
 Author: Z.WU
+
 Date:2023.Jan
 
 ## Pipeline
 
 ```mermaid
-%%{init: {'theme':'neutral'}}%%
+%%{init: {'theme':'dark'}}%%
 stateDiagram-v2
     fastqc --> Trimgalore : Trimming
     Trimgalore --> Bismark
