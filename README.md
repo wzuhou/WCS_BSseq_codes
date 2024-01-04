@@ -10,7 +10,8 @@ Date:2023.Jan
 ```mermaid
 %%{init: {'theme':'default'}}%%
 stateDiagram-v2
-    fastqc --> Trimgalore : Trimming
+    Fastq --> Trimgalore : Trimming
+    	note right of Fastq: fastqc
     Trimgalore --> Bismark
     state Bismark{
      direction LR
