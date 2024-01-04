@@ -13,11 +13,13 @@ stateDiagram-v2
     fastqc --> Trimgalore : Trimming
     Trimgalore --> Bismark
     state Bismark{
+     direction LR
     Mapping --> Deduplication
     Deduplication --> Call_Methylation
     }
     Bismark --> SeqMonk
     state SeqMonk {
+     direction LR
     Analysis_Methylation --> QC
     QC --> Methylation_signal
     }
