@@ -1,20 +1,10 @@
 #!/bin/sh
-###########################################
-#                                         #
-# Submit a job which uses some installed  #
-# applications, using:                    #
-# "module load <application>"             #
-#                                         #
-###########################################
- 
 # Grid Engine options
 #$ -N fastqc
 #$ -cwd
 #$ -l h_vmem=4G 
 #$ -pe sharedmem 8
 #$ -m baes
-
-
 
 # If you plan to load any software modules, then you must first initialise the modules framework.
 . /etc/profile.d/modules.sh
